@@ -23,7 +23,6 @@ jobs:
         run: |
           echo "REACT_APP_FIREBASE_API_KEY=${{ secrets.TEST }}" >> .env
           ls
-      - name : CI
       # Setup Java environment in order to build the Android app.
       - uses: actions/checkout@v1
       - uses: actions/setup-java@v1
